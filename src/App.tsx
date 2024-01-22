@@ -21,7 +21,7 @@ function App() {
 
   return (
     <>
-      <h1>Sum two numbers together</h1>
+      <h1>Sum two numbers together!</h1>
       <div>
       <Input id="one" label="one" value={one} onChange={(value) => setOne(value)} />
       </div>
