@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for src/main.tsx</title>
+    <title>Code coverage report for src/store.ts</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../prettify.css" />
     <link rel="stylesheet" href="../base.css" />
@@ -19,13 +19,13 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../index.html">All files</a> / <a href="index.html">src</a> main.tsx</h1>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">src</a> store.ts</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/14</span>
+                <span class='fraction'>0/13</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/14</span>
+                <span class='fraction'>0/13</span>
             </div>
         
             
@@ -75,9 +75,7 @@
 <a name='L10'></a><a href='#L10'>10</a>
 <a name='L11'></a><a href='#L11'>11</a>
 <a name='L12'></a><a href='#L12'>12</a>
-<a name='L13'></a><a href='#L13'>13</a>
-<a name='L14'></a><a href='#L14'>14</a>
-<a name='L15'></a><a href='#L15'>15</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<a name='L13'></a><a href='#L13'>13</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -89,30 +87,26 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ><span class="branch-0 cbranch-no" title="branch not covered" >import React from "react";</span></span></span>
-<span class="cstat-no" title="statement not covered" >import ReactDOM from "react-dom/client";</span>
-<span class="cstat-no" title="statement not covered" >import App from "./App.tsx";</span>
-<span class="cstat-no" title="statement not covered" >import "./index.css";</span>
-<span class="cstat-no" title="statement not covered" >import { Provider } from "react-redux";</span>
-<span class="cstat-no" title="statement not covered" >import { store } from "./store.ts";</span>
+<span class="cline-any cline-no">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ><span class="branch-0 cbranch-no" title="branch not covered" >import { configureStore } from '@reduxjs/toolkit'</span></span></span>
+<span class="cstat-no" title="statement not covered" >import sumSlice from './reducers/sumSlice'</span>
 <span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >ReactDOM.createRoot(document.getElementById("root")!).render(</span>
-<span class="cstat-no" title="statement not covered" >  &lt;React.StrictMode&gt;</span>
-<span class="cstat-no" title="statement not covered" >    &lt;Provider store={store}&gt;</span>
-<span class="cstat-no" title="statement not covered" >      &lt;App /&gt;</span>
-<span class="cstat-no" title="statement not covered" >    &lt;/Provider&gt;</span>
-<span class="cstat-no" title="statement not covered" >  &lt;/React.StrictMode&gt;</span>
-<span class="cstat-no" title="statement not covered" >);</span>
-&nbsp;</pre></td></tr></table></pre>
+<span class="cstat-no" title="statement not covered" >export const store = configureStore({</span>
+<span class="cstat-no" title="statement not covered" >  reducer: {</span>
+<span class="cstat-no" title="statement not covered" >    sum: sumSlice</span>
+<span class="cstat-no" title="statement not covered" >  },</span>
+<span class="cstat-no" title="statement not covered" >})</span>
+<span class="cstat-no" title="statement not covered" ></span>
+<span class="cstat-no" title="statement not covered" >// Infer the `RootState` and `AppDispatch` types from the store itself</span>
+<span class="cstat-no" title="statement not covered" >export type RootState = ReturnType&lt;typeof store.getState&gt;</span>
+<span class="cstat-no" title="statement not covered" >// Inferred type: {posts: PostsState, comments: CommentsState, users: UsersState}</span>
+<span class="cstat-no" title="statement not covered" >export type AppDispatch = typeof store.dispatch</span></pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2024-01-22T04:50:03.290Z
+                at 2024-01-22T05:03:29.950Z
             </div>
         <script src="../prettify.js"></script>
         <script>
