@@ -4,10 +4,10 @@ type payload = PayloadAction<{one: string, two: string}>
 
 const sumSlice = createSlice({
   name: 'todos',
-  initialState: 0,
+  initialState: {value: 0},
   reducers: {
     sum: (state, action: payload) => {
-        return state = Number(action.payload.one) + Number(action.payload.two)
+        state.value = Number(action.payload.one) + Number(action.payload.two)
     }
   },
 })

@@ -30,7 +30,7 @@ function App() {
       </div>
       <Button onClick={sumTwoNumbers}/>
       <h2>value:</h2>
-      <div>{sumValue}</div>
+      <div>{sumValue.value}</div>
     </>
   )
 }
