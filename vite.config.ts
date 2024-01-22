@@ -9,7 +9,6 @@ export default defineConfig({
   test: {
     environment: 'jsdom',
     coverage: {
-      reportsDirectory: './actions-example/coverage',
       provider: 'v8',
       thresholds: {
         lines: 40,
