@@ -11,8 +11,8 @@ export default defineConfig({
     environment: 'jsdom',
     coverage: {
       reporter: ['text', 'html', 'clover', 'json', 'json-summary'],
+      exclude: ['coverage/**'],
       provider: 'v8',
-      include: ['src/**/*.{test,spec}.?(c|m)[jt]s?(x)'],
       thresholds: {
         lines: 40,
         branches: 40,
