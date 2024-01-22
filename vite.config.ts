@@ -6,9 +6,11 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base: '/actions-example/',
   plugins: [react()],
+  
   test: {
     environment: 'jsdom',
     coverage: {
+      reporter: ['html', 'json'],
       provider: 'v8',
       include: ['src/**/*.{test,spec}.?(c|m)[jt]s?(x)'],
       thresholds: {
