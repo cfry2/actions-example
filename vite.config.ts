@@ -10,7 +10,7 @@ export default defineConfig({
   test: {
     environment: 'jsdom',
     coverage: {
-      reporter: ['html', 'json'],
+      reporter: ['text', 'html', 'clover', 'json', 'json-summary'],
       provider: 'v8',
       include: ['src/**/*.{test,spec}.?(c|m)[jt]s?(x)'],
       thresholds: {
