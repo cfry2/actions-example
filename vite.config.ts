@@ -10,6 +10,7 @@ export default defineConfig({
     environment: 'jsdom',
     coverage: {
       provider: 'v8',
+      include: ['src/**/*.{test,spec}.?(c|m)[jt]s?(x)'],
       thresholds: {
         lines: 40,
         branches: 40,
