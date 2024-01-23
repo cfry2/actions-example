@@ -29,6 +29,8 @@ jobs:
               with:
                 node-version: 18
                 cache: 'npm'
+            - name: Install dependencies
+              run: npm install
             - name: Run unit tests
               run: npm test
             - name: 'Report Coverage'
