@@ -2,9 +2,9 @@
 name: create preview environment & run e2e
 
 on: 
-    pull_request:
-        branches:
-            - main
+  pull_request:
+      branches:
+          - main
 
 # Sets the GITHUB_TOKEN permissions to allow deployment to GitHub Pages
 permissions:
