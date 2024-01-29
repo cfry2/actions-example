@@ -37,7 +37,7 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Build
-        run: npm run build
+        run: npm run build --base "/actions-example/pr-preview/${{github.ref_name}}/"
       - name: Deploy preview
         uses: rossjrw/pr-preview-action@v1
         with:
