@@ -38,7 +38,7 @@ function App() {
           value={one}
           onChange={(value) => setOne(value)}
         />
-                <Input
+        <Input
           id="one"
           label="two"
           value={two}
