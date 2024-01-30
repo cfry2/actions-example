@@ -6,7 +6,9 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base: '/actions-example/',
   plugins: [react()],
-  
+  build: {
+    outDir: 'docs'
+  },
   test: {
     environment: 'jsdom',
     coverage: {
