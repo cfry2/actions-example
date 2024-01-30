@@ -42,5 +42,7 @@ jobs:
         uses: rossjrw/pr-preview-action@v1
         with:
           source-dir: ./dist/
+      - name: wait for preview to become available
+        run: sleep 120
       - name: run e2e
         run: CYPRESS_BASE_URL=https://cfry2.github.io/actions-example/pr-preview/pr-${{github.event.number}} npm run e2e
