@@ -1,0 +1,95 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`handles actions 1`] = `
+<body>
+  <div>
+    <style>
+      
+:root, .light, .light-theme { --color-page-background: white; }
+.dark, .dark-theme { --color-page-background: var(--slate-1); }
+body { background-color: var(--color-page-background); }
+
+    </style>
+    <div
+      class="radix-themes"
+      data-accent-color="indigo"
+      data-gray-color="slate"
+      data-has-background="false"
+      data-is-root-theme="true"
+      data-panel-background="translucent"
+      data-radius="medium"
+      data-scaling="100%"
+    >
+      <div
+        style="max-width: 1100px; margin: 0px auto 0px auto;"
+      >
+        <div
+          class="rt-Box rt-r-pb-6"
+        >
+          <h1
+            class="rt-Heading rt-r-size-9 rt-r-weight-bold"
+          >
+            Sum two numbers together!
+          </h1>
+        </div>
+        <div
+          class="rt-Box rt-r-pb-6"
+        >
+          <div
+            class="rt-Flex rt-r-display-flex rt-r-jc-center rt-r-gap-3"
+          >
+            <div
+              class="rt-TextFieldRoot"
+            >
+              <input
+                class="rt-TextFieldInput rt-r-size-2 rt-variant-surface"
+                id="one"
+                placeholder="one"
+                spellcheck="false"
+                type="text"
+                value=""
+              />
+              <div
+                class="rt-TextFieldChrome"
+              />
+            </div>
+            <div
+              class="rt-TextFieldRoot"
+            >
+              <input
+                class="rt-TextFieldInput rt-r-size-2 rt-variant-surface"
+                id="one"
+                placeholder="two"
+                spellcheck="false"
+                type="text"
+                value=""
+              />
+              <div
+                class="rt-TextFieldChrome"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="rt-Box rt-r-pb-6"
+        >
+          <button
+            class="rt-reset rt-BaseButton rt-Button rt-r-size-2 rt-variant-solid"
+            type="button"
+          >
+            Go!
+          </button>
+        </div>
+        <h2
+          class="rt-Heading rt-r-size-8 rt-r-weight-bold"
+        >
+          value:
+        </h2>
+        <div>
+          0
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;
