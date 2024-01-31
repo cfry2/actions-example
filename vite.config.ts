@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/actions-example/',
+  base: '/',
   plugins: [react()],
   build: {
     outDir: 'docs'
@@ -13,13 +13,14 @@ export default defineConfig({
     environment: 'jsdom',
     coverage: {
       reporter: ['text', 'html', 'clover', 'json', 'json-summary'],
-      exclude: ['coverage/**'],
+      include: ['src/**/*.*'],
+      exclude: ['coverage/**', 'src/main.tsx', 'src/store.ts', 'src/vite-env.d.ts'],
       provider: 'v8',
       thresholds: {
-        lines: 40,
-        branches: 40,
-        functions: 40,
-        statements: 40
+        lines: 90,
+        branches: 90,
+        functions: 90,
+        statements: 90
       },
       reportOnFailure: true,
     }
