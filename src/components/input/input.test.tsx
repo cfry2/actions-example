@@ -15,8 +15,8 @@ test("only allows numbers", async () => {
       />
     </>
   );
-  await userEvent.type(screen.getByLabelText('input'), 'foo');
+  await userEvent.type(screen.getByPlaceholderText('input'), 'foo');
   expect(value).toEqual('');
-  await userEvent.type(screen.getByLabelText('input'), '1');
+  await userEvent.type(screen.getByPlaceholderText('input'), '1');
   expect(value).toEqual('1');
 });

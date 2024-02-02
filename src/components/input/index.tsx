@@ -1,5 +1,5 @@
 import { ChangeEvent } from "react";
-// import { css } from '@emotion/react'
+import {TextField} from '@radix-ui/themes'
 
 type Props = {
   value: string;
@@ -18,10 +18,10 @@ const Input = (props: Props) => {
 
   return (
     <>
-      <label htmlFor={props.id}>{props.label}</label>
-      <input
+      <TextField.Input
         id={props.id}
         type="text"
+        placeholder={props.label}
         value={props.value}
         onChange={handleChange}
       />
