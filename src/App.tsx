@@ -29,8 +29,7 @@ function App() {
       <Input id="one" label="two" value={two} onChange={(value) => setTwo(value)} />
       </div>
       <Button onClick={sumTwoNumbers}/>
-      <h2>value:</h2>
-      <div>{sumValue.value}</div>
+      <h2>{one || 0} + {two || 0} = {sumValue.value}</h2>
     </>
   )
 }
