@@ -1,11 +1,15 @@
-import {Button} from '@radix-ui/themes'
+import { Button } from "@radix-ui/themes";
 
 type Props = {
-    onClick: () => void
-}
+  onClick: () => void;
+};
 
 const ButtonComponent = (props: Props) => {
-    return <Button type="button" onClick={props.onClick}>Go!</Button>
-}
+  return (
+    <Button type="button" onClick={props.onClick}>
+      Calculate
+    </Button>
+  );
+};
 
-export default ButtonComponent
+export default ButtonComponent;
